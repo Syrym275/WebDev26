@@ -1,0 +1,96 @@
+#all{
+  background-color:rgb(240, 239, 239);
+  height:80vh;
+}
+
+
+
+#title{
+  font-family: Arial, Sans-Serif;
+  font-size:55px;
+  color:rgb(10,10,255);
+  margin-left:20%;
+  position: relative;
+  top:150px;
+}
+
+a{
+    text-decoration: none;
+}
+#info{
+  color:black;
+  width:25%;
+  margin-left:20%;
+  position: relative;
+  top:130px;
+  font-size:20px;
+}
+
+#info2{
+    width:300px;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    bottom:60px;
+    margin-left:52%;
+}
+ 
+#box{
+  background-color: white;
+  width:300px;
+  
+  padding:40px;
+  gap:15px;
+  margin-top:0%;
+  margin-left:50%;
+  transform: rotateX('angle');
+  border-radius: 7px;
+  position: relative;
+  top:-70px;
+}
+ 
+#sign_in{
+  background-color:blue;
+  color:white;
+  display: block;
+  width:90%;
+  height:40px;
+  display: flex;
+  justify-content: center;  /* centers text horizontally */
+  align-items: center; 
+  border-radius: 7px;
+}
+ 
+#password{
+  color:blue;
+}
+ 
+#new{
+  background-color:rgb(64, 209, 64);
+  color:white;
+  display: block;
+  width:65%;
+  height:40px;
+  display: flex;
+  justify-content: center;  /* centers text horizontally */
+  align-items: center; 
+  border-radius: 7px;
+}
+
+.field{
+  width:90%;
+  height:40px;
+  border-radius: 7px;
+  border:1px solid grey;
+}
+
+#bottom{
+  background-color: white;
+  margin-bottom:0%;
+  width:80%;
+  display:block;
+  color:grey;
+  text-align: left;
+  margin-left:10%;
+}
+
