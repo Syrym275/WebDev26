@@ -1,0 +1,131 @@
+
+
+<header>  
+  <img src = "https://static.insales-cdn.com/images/products/1/4618/880833034/large_logo_square.fw.png"
+      width="80px" height = "80px" >
+  <p><b id="kaspi_h1">Kaspi.kz</b></p>
+  <input type="text" placeholder="Search bar">
+  </header>
+    <h1>Online Store in Kaspi.kz</h1>
+
+    <div *ngIf="products && products.length; else noProducts">
+    <div *ngFor="let c of categories">
+
+      <h1>{{ c.name }}</h1>
+
+    <div class="grid">
+      <div class="card" *ngFor="let p of products"
+      [hidden]="p.categoryId !== c.id"
+      >
+
+        <img id="product_img" [src]="p.image" />
+
+        <h2>{{ p.name }}</h2>
+
+        <p>{{ p.description }}</p>
+
+        <p id="pr"><b>{{ p.price | number }} KZT</b></p>
+
+        
+        <p>Likes: {{ p.likes }}</p>
+
+        <p>Rating: {{ p.rating }} ⭐</p>
+
+        <a [href]="p.link" target="_blank">Open in Kaspi</a>
+        <br>
+
+        <button id="view_gallery" (click)="toggleGallery(p.id)">
+          {{ showGallery[p.id] ? 'Hide Gallery' : 'View Gallery' }}
+        </button>
+
+        <button style="background:red; color:white; margin-top:5px;"
+        (click)="deleteProduct(p.id)">
+  Delete
+</button>
+
+<button style="background:green; color:white; margin-top:5px;" (click)="likeProduct(p)">
+  Like
+</button>
+        
+        <br>
+        
+
+        <div class="gallery" *ngIf="showGallery[p.id] && p.images.length > 1">
+
+          <br>
+
+          <img
+            class="main-img"
+            [src]="p.images[currentImageIndex[p.id] || 0]"
+          />
+
+          <button (click)="prevImage(p)">◀</button>
+          <button (click)="nextImage(p)">▶</button>
+
+          <div class="thumbs">
+            <img
+              *ngFor="let img of p.images; let i = index"
+              [src]="img"
+              (click)="setImage(p.id, i)"
+              class="thumb"
+            />
+          </div>
+
+        </div>
+
+        <div class="share">
+          <button id="whatsapp" (click)="shareWA(p)">WhatsApp</button>
+          <button id="telega" (click)="shareTG(p)">Telegram</button>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <ng-template #noProducts>
+  <p style="text-align:center; font-size:20px; color:red;">
+    No products in this category.
+  </p>
+</ng-template>
+
+    <br>
+    <h1>Scan to go
+    to the app Kaspi.kz</h1>
+    <br>
+    <img id="qr" src="https://kaspi.kz/img/QRs/qr-offices-map.png">
+    <br>
+    
+
+    <hr>
+    <footer>
+      <p id="bottom">© 2012-2026, АО «Kaspi Bank» <br>
+      Лицензия на проведение банковских и иных операций и деятельности на рынке ценных бумаг №1.2.245/61 от 03.02.2020, выданная Агентством Республики Казахстан по регулированию и развитию финансового рынка</p>
+    </footer>
+
+  
+<!--
+  -------
+<div *ngIf="products.length === 0">
+  <p style="color:red;">No products in this category.</p>
+</div>
+
+<div *ngFor="let product of products">
+  <app-product-item
+    [product]="product"
+    (delete)="onDelete($event)">
+  </app-product-item>
+</div>
+
+
+<div *ngIf="products.length === 0">
+  <p style="color:red;">No products in this category.</p>
+</div>
+
+<div *ngFor="let product of products">
+  <app-product-item
+    [product]="product"
+    (delete)="deleteProduct($event)">
+  </app-product-item>
+</div>
+-->

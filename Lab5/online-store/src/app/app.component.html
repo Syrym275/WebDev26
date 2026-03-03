@@ -1,0 +1,33 @@
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h3>Categories</h3>
+    <ul>
+      <li 
+        *ngFor="let c of categories"
+        (click)="selectCategory(c.id)"
+        [class.active]="c.id === selectedCategoryId">
+        {{ c.name }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+
+    <!-- If nothing selected -->
+    <div *ngIf="!selectedCategoryId">
+      <h2>Welcome!</h2>
+      <p>Please select a category from the sidebar.</p>
+    </div>
+
+    <app-product-list
+      [products]="filteredProducts"
+      (deleteProductEvent)="onDeleteProduct($event)">
+
+</app-product-list>
+
+  </div>
+
+</div>

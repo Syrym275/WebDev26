@@ -1,0 +1,36 @@
+<!--
+<div class="card">
+  <img id="product_img" [src]="product.image" />
+
+  <h2>{{ product.name }}</h2>
+  <p>{{ product.description }}</p>
+  <p id="pr"><b>{{ product.price | number }} KZT</b></p>
+  <p>Likes: {{ product.likes }}</p>
+  <p>Rating: {{ product.rating }} ⭐</p>
+
+  <button style="background:green; color:white;" (click)="likeProduct()">Like</button>
+  <button style="background:red; color:white;" (click)="deleteProduct()">Delete</button>
+
+  <div class="share">
+    <button id="whatsapp" (click)="shareWA()">WhatsApp</button>
+    <button id="telega" (click)="shareTG()">Telegram</button>
+  </div>
+
+  <button id="view_gallery" (click)="toggleGallery()">
+    {{ showGallery ? 'Hide Gallery' : 'View Gallery' }}
+  </button>
+
+  <div class="gallery" *ngIf="showGallery && product.images.length > 1">
+    <img class="main-img" [src]="product.images[currentImageIndex]" />
+    <button (click)="prevImage()">◀</button>
+    <button (click)="nextImage()">▶</button>
+
+    <div class="thumbs">
+      <img *ngFor="let img of product.images; let i = index"
+           [src]="img"
+           class="thumb"
+           (click)="setImage(i)" />
+    </div>
+  </div>
+</div>
+-->

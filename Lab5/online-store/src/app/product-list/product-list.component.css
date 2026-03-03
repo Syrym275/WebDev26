@@ -1,0 +1,127 @@
+h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size:40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 20px;
+      padding: 20px;
+      background-color:rgb(242, 243, 243);
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color:white;
+    }
+
+    #product_img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-right: 8px;
+      margin-top: 8px;
+      cursor: pointer;
+      background-color:white;
+    }
+
+    p, .share, a, h2, b{
+    background-color:white;
+    }
+
+    #kaspi_h1{
+      position:absolute;
+      left:100px;
+      top:15px;
+      background-color:rgb(242, 243, 243);
+      font-size:40px;
+      font-family:Roboto;
+    }
+
+    input{
+      width:15%;
+      height:20px;
+      border-radius: 8px;
+      border-color: rgb(212, 209, 209);
+      border-width: 0.3px;
+
+      position:absolute;
+      right:20px;
+      top:20px;
+    }
+
+    #qr{
+      display: block;      /* 1. Change the image from inline to block-level */
+      margin-left: auto;   /* 2. Set left margin to auto */
+      margin-right: auto;
+    }
+
+    #bottom{
+      width:50%;
+      margin-left:3%;
+      background-color: rgb(242, 243, 243);
+    }
+
+
+    <!-- optional task style-->
+
+    .gallery {
+      text-align: center;
+      
+    }
+
+    .main-img {
+      width: 90%;
+      height: 250px;
+      object-fit: cover;
+      display: block;      /* 1. Change the image from inline to block-level */
+      margin-left: auto;   /* 2. Set left margin to auto */
+      margin-right: auto;
+    }
+
+    .thumbs {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 5px;
+}
+
+    .thumb {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 2px solid transparent;
+  }
+
+    .thumb:hover {
+      border-color: blue;
+    }
+
+    button{
+      border-radius: 8px;
+      
+    }
+    
+    #view_gallery{
+      border-color:yellow;
+    }
+
+    #telega{
+      border-color:blue;
+     
+    }
+
+    #whatsapp{
+      border-color:green;
+    }
