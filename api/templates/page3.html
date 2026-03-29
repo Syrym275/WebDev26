@@ -1,0 +1,15 @@
+<html>
+
+    <body>
+        <p> The products for the category <b>{{category}} </b> are:</p>
+        
+
+        <ul>
+        {% for i in list %}
+            <li>{{ i.name }}</li>
+        {% endfor %}
+        </ul>
+
+    </body>
+
+</html>

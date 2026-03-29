@@ -1,0 +1,22 @@
+[
+  { "model": "api.category", "pk": 1, "fields": { "name": "Phones" } },
+  { "model": "api.category", "pk": 2, "fields": { "name": "Laptops" } },
+  { "model": "api.category", "pk": 3, "fields": { "name": "Accessories" } },
+  { "model": "api.category", "pk": 4, "fields": { "name": "Gaming" } },
+
+  { "model": "api.product", "pk": 1, "fields": { "name": "iPhone 13", "price": 999.99, "description": "Apple smartphone", "count": 15, "is_active": true, "category": 1 } },
+  { "model": "api.product", "pk": 2, "fields": { "name": "Samsung Galaxy S21", "price": 799.99, "description": "Samsung flagship phone", "count": 20, "is_active": true, "category": 1 } },
+  { "model": "api.product", "pk": 3, "fields": { "name": "Google Pixel 7", "price": 699.99, "description": "Google smartphone", "count": 10, "is_active": true, "category": 1 } },
+
+  { "model": "api.product", "pk": 4, "fields": { "name": "MacBook Pro", "price": 1999.99, "description": "Apple laptop", "count": 5, "is_active": true, "category": 2 } },
+  { "model": "api.product", "pk": 5, "fields": { "name": "Dell XPS 13", "price": 1499.99, "description": "Compact powerful laptop", "count": 7, "is_active": true, "category": 2 } },
+  { "model": "api.product", "pk": 6, "fields": { "name": "HP Spectre x360", "price": 1399.99, "description": "Convertible laptop", "count": 6, "is_active": true, "category": 2 } },
+
+  { "model": "api.product", "pk": 7, "fields": { "name": "Wireless Mouse", "price": 29.99, "description": "Bluetooth mouse", "count": 50, "is_active": true, "category": 3 } },
+  { "model": "api.product", "pk": 8, "fields": { "name": "Mechanical Keyboard", "price": 89.99, "description": "RGB keyboard", "count": 30, "is_active": true, "category": 3 } },
+  { "model": "api.product", "pk": 9, "fields": { "name": "USB-C Hub", "price": 49.99, "description": "Multiport adapter", "count": 25, "is_active": true, "category": 3 } },
+
+  { "model": "api.product", "pk": 10, "fields": { "name": "PlayStation 5", "price": 499.99, "description": "Next-gen console", "count": 8, "is_active": true, "category": 4 } },
+  { "model": "api.product", "pk": 11, "fields": { "name": "Xbox Series X", "price": 499.99, "description": "Microsoft console", "count": 9, "is_active": true, "category": 4 } },
+  { "model": "api.product", "pk": 12, "fields": { "name": "Gaming Headset", "price": 79.99, "description": "Surround sound headset", "count": 18, "is_active": true, "category": 4 } }
+]
